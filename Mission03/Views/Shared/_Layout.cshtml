@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Where I include the website title, icon, bootstrap link, and css link -->
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/img/homeicon.png" />
+
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <!-- Where I link in my bootstrap, jquery, and js files -->
+    <script src="~/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+
+    <nav>
+        <a asp-controller="Primero" asp-action="Index">Index</a>
+        <a asp-controller="Primero" asp-action="Grade">Grade</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

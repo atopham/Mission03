@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Where I include the website title, icon, bootstrap link, and css link -->
+    <meta charset="utf-8" />
+    <title>The Magical Journey of IS 413</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/homeicon.png"/>
+
+</head>
+<body>
+    <!-- My name header and the image of me doing something fun -->
+    <h1>Andrew Topham</h1>
+    <img id="picCello" src="img/AubreyMeCello.JPG" />
+
+    <!-- What I want to get out of IS 413 -->
+    <p class="para">In IS 413, I hope to learn how to make a full web app using ASP.NET. Furthermore, I hope to be able to make the web app have CRUD and search functionality. I want to have experience with connecting the web app to a database and deploying the web app. I also would like to learn how to make my web app interact with other websites. Additionally, I will learn how to implement machine learning in my web app.</p>
+    <br />
+
+    <!-- List of Jobs I'm most interested in' -->
+    <p>Jobs I'm most interested in:</p>
+    <ol>
+        <li>Software Engineer</li>
+        <li>Data Scientist</li>
+        <li>Machine Learning Specialist</li>
+    </ol>
+
+    <!-- Inputs for each grade type -->
+    <h2>Calculate Your Overall Percentage:</h2>
+    <form>
+        <label>Assignments:</label>
+        <input id="asgmts" /><br />
+        <label>Group Project:</label>
+        <input id="gp" /><br />
+        <label>Quizzes:</label>
+        <input id="qz" /><br />
+        <label>Exams:</label>
+        <input id="exm" /><br />
+        <label>INTEX:</label>
+        <input id="ix" /><br />
+        <input id="calc" type="button" value="Calculate Percentage" />
+    </form>
+
+    <!-- Where the final numeric and letter grade will be displayed -->
+    <h2 id="fg"></h2>
+
+    <!-- Where I link in my bootstrap, jquery, and js files -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/logic.js"></script>
+
+</body>
+</html>

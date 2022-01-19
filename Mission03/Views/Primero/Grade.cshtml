@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Calculate Your Final Grade";
+
+}
+
+@model GradeModel
+
+<!-- Inputs for each grade type -->
+<h2>Calculate Your Overall Percentage:</h2>
+<form>
+    <label>Assignments:</label>
+    <input id="asgmts" asp-for="Asgmts"/><br />
+    <label>Group Project:</label>
+    <input id="gp" asp-for="Gp"/><br />
+    <label>Quizzes:</label>
+    <input id="qz" asp-for="Qz"/><br />
+    <label>Exams:</label>
+    <input id="exm" asp-for="Exm"/><br />
+    <label>INTEX:</label>
+    <input id="ix" asp-for="Ix"/><br />
+    <input id="calc" type="submit" value="Calculate Percentage" />
+    <div asp-validation-summary="All"></div>
+</form>
+
+<!-- Where the final numeric and letter grade will be displayed -->
+<h2 id="fg"></h2>
+
+<script src="~/js/logic.js"></script>
