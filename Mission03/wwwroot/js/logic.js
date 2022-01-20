@@ -36,6 +36,7 @@ $("#calc").click(function () {
     }
 
     //Output the results to the tag at the bottom
+    alert("My Final Grade is: " + (grade * 100).toFixed(2) + "%. That's " + letterGrade);
     $('#fg').html("My Final Grade is: " + (grade * 100).toFixed(2) + "%. That's " + letterGrade);
 
     

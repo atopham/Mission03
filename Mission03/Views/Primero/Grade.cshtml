@@ -10,19 +10,21 @@
 
 <!-- Inputs for each grade type -->
 <h2>Calculate Your Overall Percentage:</h2>
-<form>
+<form method="post">
+    
     <label>Assignments:</label>
-    <input id="asgmts" asp-for="Asgmts"/><br />
+    <input id="asgmts" asp-for="asgmts" /><br />
     <label>Group Project:</label>
-    <input id="gp" asp-for="Gp"/><br />
+    <input id="gp" asp-for="gp" /><br />
     <label>Quizzes:</label>
-    <input id="qz" asp-for="Qz"/><br />
+    <input id="qz" asp-for="qz" /><br />
     <label>Exams:</label>
-    <input id="exm" asp-for="Exm"/><br />
+    <input id="exm" asp-for="exm" /><br />
     <label>INTEX:</label>
-    <input id="ix" asp-for="Ix"/><br />
-    <input id="calc" type="submit" value="Calculate Percentage" />
+    <input id="ix" asp-for="ix" /><br />
+
     <div asp-validation-summary="All"></div>
+    <input id="calc" type="submit" value="Calculate Percentage" />
 </form>
 
 <!-- Where the final numeric and letter grade will be displayed -->

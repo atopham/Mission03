@@ -8,17 +8,25 @@ namespace Mission03.Models
 {
     public class GradeModel
     {
+        [Required]
+        [Range(0, 100, ErrorMessage = "You must input a number between 1 and 100")]
+        public int asgmts { get; set; }
 
+        [Required]
         [Range(0, 100, ErrorMessage = "You must input a number between 1 and 100")]
-        public int Asgmts { get; set; }
+        public int gp { get; set; }
+
+        [Required]
         [Range(0, 100, ErrorMessage = "You must input a number between 1 and 100")]
-        public int Gp { get; set; }
+        public int qz { get; set; }
+
+        [Required]
         [Range(0, 100, ErrorMessage = "You must input a number between 1 and 100")]
-        public int Qz { get; set; }
+        public int exm { get; set; }
+
+        [Required]
         [Range(0, 100, ErrorMessage = "You must input a number between 1 and 100")]
-        public int Exm { get; set; }
-        [Range(0, 100, ErrorMessage = "You must input a number between 1 and 100")]
-        public int Ix { get; set; }
+        public int ix { get; set; }
 
 
     }
